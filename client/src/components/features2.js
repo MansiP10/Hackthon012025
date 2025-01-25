@@ -82,36 +82,36 @@ const Features2 = (props) => {
 }
 
 Features2.defaultProps = {
-  feature3Description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
-  feature1ImgAlt: 'feature 1',
   feature1Description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
+  feature2ImgAlt: 'Image showcasing Skill Badge Workflow',
+  feature1ImgAlt: 'feature 1',
+  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature3Description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.',
   feature3ImgAlt: 'image',
-  feature2Title: 'Skill Badge Workflow',
-  feature1Title: 'Feature #1',
   feature1ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
-  feature3ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature1Title: 'Feature #1',
+  feature3Title: 'Feature #3',
   feature2Description:
     'The Skill Badge Workflow includes a quiz to earn expert badges for specific skills. Users can choose to take the quiz or skip it, with the option to connect with professionals for skill improvement.',
-  feature3Title: 'Feature #3',
-  feature2ImgAlt: 'Image showcasing Skill Badge Workflow',
-  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature3ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature2Title: 'Skill Badge Workflow',
 }
 
 Features2.propTypes = {
-  feature3Description: PropTypes.string,
-  feature1ImgAlt: PropTypes.string,
   feature1Description: PropTypes.string,
-  feature3ImgAlt: PropTypes.string,
-  feature2Title: PropTypes.string,
-  feature1Title: PropTypes.string,
-  feature1ImgSrc: PropTypes.string,
-  feature3ImgSrc: PropTypes.string,
-  feature2Description: PropTypes.string,
-  feature3Title: PropTypes.string,
   feature2ImgAlt: PropTypes.string,
+  feature1ImgAlt: PropTypes.string,
   feature2ImgSrc: PropTypes.string,
+  feature3Description: PropTypes.string,
+  feature3ImgAlt: PropTypes.string,
+  feature1ImgSrc: PropTypes.string,
+  feature1Title: PropTypes.string,
+  feature3Title: PropTypes.string,
+  feature2Description: PropTypes.string,
+  feature3ImgSrc: PropTypes.string,
+  feature2Title: PropTypes.string,
 }
 
 export default Features2

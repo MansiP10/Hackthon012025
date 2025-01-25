@@ -22,7 +22,7 @@ const Pricing = (props) => {
           {isMonthly && (
             <button
               onClick={() => setIsMonthly(true)}
-              className="pricing-button10 thq-button-animated thq-button-filled"
+              className="pricing-button1 thq-button-animated thq-button-filled"
             >
               <span className="thq-body-small">Monthly</span>
             </button>
@@ -30,7 +30,7 @@ const Pricing = (props) => {
           {!isMonthly && (
             <button
               onClick={() => setIsMonthly(true)}
-              className="pricing-button11 thq-button-outline thq-button-animated"
+              className="pricing-button2 thq-button-animated thq-button-outline"
             >
               <span className="thq-body-small">Monthly</span>
             </button>
@@ -38,7 +38,7 @@ const Pricing = (props) => {
           {!isMonthly && (
             <button
               onClick={() => setIsMonthly(false)}
-              className="pricing-button12 thq-button-animated thq-button-filled"
+              className="pricing-button3 thq-button-animated thq-button-filled"
             >
               <span className="thq-body-small">Yearly</span>
             </button>
@@ -46,7 +46,7 @@ const Pricing = (props) => {
           {isMonthly && (
             <button
               onClick={() => setIsMonthly(false)}
-              className="pricing-button13 thq-button-outline thq-button-animated"
+              className="pricing-button4 thq-button-animated thq-button-outline"
             >
               <span className="thq-body-small">Yearly</span>
             </button>
@@ -90,18 +90,18 @@ const Pricing = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="pricing-button14 thq-button-outline thq-button-animated">
+              <button className="pricing-button5 thq-button-animated thq-button-outline">
                 <span className="thq-body-small">{props.plan1Action}</span>
               </button>
             </div>
             <div className="pricing-column2 thq-card">
               <div className="pricing-price12">
                 <div className="pricing-price13">
-                  <p className="pricing-text24 thq-body-large">{props.plan2}</p>
+                  <p className="pricing-text24 thq-body-large">{props.plan3}</p>
                   <h3 className="pricing-text25 thq-heading-3">
-                    {props.plan2Price}
+                    {props.plan3Price}
                   </h3>
-                  <p className="thq-body-large">{props.plan2Yearly}</p>
+                  <p className="thq-body-large">{props.plan3Yearly}</p>
                 </div>
                 <div className="pricing-list2">
                   <div className="pricing-list-item13">
@@ -109,7 +109,7 @@ const Pricing = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className="thq-body-small">
-                      {props.plan2Feature1}
+                      {props.plan3Feature1}
                     </span>
                   </div>
                   <div className="pricing-list-item14">
@@ -117,7 +117,7 @@ const Pricing = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className="thq-body-small">
-                      {props.plan2Feature2}
+                      {props.plan3Feature2}
                     </span>
                   </div>
                   <div className="pricing-list-item15">
@@ -125,7 +125,7 @@ const Pricing = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className="thq-body-small">
-                      {props.plan2Feature3}
+                      {props.plan3Feature3}
                     </span>
                   </div>
                   <div className="pricing-list-item16">
@@ -133,58 +133,10 @@ const Pricing = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className="thq-body-small">
-                      {props.plan2Feature4}
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <button className="pricing-button15 thq-button-animated thq-button-filled">
-                <span className="thq-body-small">{props.plan2Action}</span>
-              </button>
-            </div>
-            <div className="pricing-column3 thq-card">
-              <div className="pricing-price14">
-                <div className="pricing-price15">
-                  <p className="pricing-text32 thq-body-large">{props.plan3}</p>
-                  <h3 className="pricing-text33 thq-heading-3">
-                    {props.plan3Price}
-                  </h3>
-                  <p className="thq-body-large">{props.plan3Yearly}</p>
-                </div>
-                <div className="pricing-list3">
-                  <div className="pricing-list-item17">
-                    <svg viewBox="0 0 1024 1024" className="thq-icon-small">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                    <span className="thq-body-small">
-                      {props.plan3Feature1}
-                    </span>
-                  </div>
-                  <div className="pricing-list-item18">
-                    <svg viewBox="0 0 1024 1024" className="thq-icon-small">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                    <span className="thq-body-small">
-                      {props.plan3Feature2}
-                    </span>
-                  </div>
-                  <div className="pricing-list-item19">
-                    <svg viewBox="0 0 1024 1024" className="thq-icon-small">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                    <span className="thq-body-small">
-                      {props.plan3Feature3}
-                    </span>
-                  </div>
-                  <div className="pricing-list-item20">
-                    <svg viewBox="0 0 1024 1024" className="thq-icon-small">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                    <span className="thq-body-small">
                       {props.plan3Feature4}
                     </span>
                   </div>
-                  <div className="pricing-list-item21">
+                  <div className="pricing-list-item17">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -194,7 +146,7 @@ const Pricing = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="pricing-button16 thq-button-animated thq-button-filled">
+              <button className="pricing-button6 thq-button-animated thq-button-filled">
                 <span className="thq-body-small">{props.plan3Action}</span>
               </button>
             </div>
@@ -202,19 +154,19 @@ const Pricing = (props) => {
         )}
         {!isMonthly && (
           <div className="pricing-container2">
-            <div className="pricing-column4 thq-card">
-              <div className="pricing-price16">
-                <div className="pricing-price17">
-                  <span className="pricing-text41 thq-body-large">
+            <div className="pricing-column3 thq-card">
+              <div className="pricing-price14">
+                <div className="pricing-price15">
+                  <span className="pricing-text33 thq-body-large">
                     {props.plan11}
                   </span>
-                  <h3 className="pricing-text42 thq-heading-3">
+                  <h3 className="pricing-text34 thq-heading-3">
                     {props.plan1Price1}
                   </h3>
                   <span className="thq-body-large">{props.plan1Yearly1}</span>
                 </div>
-                <div className="pricing-list4">
-                  <div className="pricing-list-item22">
+                <div className="pricing-list3">
+                  <div className="pricing-list-item18">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -222,7 +174,7 @@ const Pricing = (props) => {
                       {props.plan1Feature11}
                     </span>
                   </div>
-                  <div className="pricing-list-item23">
+                  <div className="pricing-list-item19">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -230,7 +182,7 @@ const Pricing = (props) => {
                       {props.plan1Feature21}
                     </span>
                   </div>
-                  <div className="pricing-list-item24">
+                  <div className="pricing-list-item20">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -240,23 +192,23 @@ const Pricing = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="pricing-button17 thq-button-outline thq-button-animated">
+              <button className="pricing-button7 thq-button-animated thq-button-outline">
                 <span className="thq-body-small">{props.plan1Action1}</span>
               </button>
             </div>
-            <div className="pricing-column5 thq-card">
-              <div className="pricing-price18">
-                <div className="pricing-price19">
-                  <span className="pricing-text48 thq-body-large">
+            <div className="pricing-column4 thq-card">
+              <div className="pricing-price16">
+                <div className="pricing-price17">
+                  <span className="pricing-text40 thq-body-large">
                     {props.plan21}
                   </span>
-                  <h3 className="pricing-text49 thq-heading-3">
+                  <h3 className="pricing-text41 thq-heading-3">
                     {props.plan2Price1}
                   </h3>
                   <span className="thq-body-large">{props.plan2Yearly1}</span>
                 </div>
-                <div className="pricing-list5">
-                  <div className="pricing-list-item25">
+                <div className="pricing-list4">
+                  <div className="pricing-list-item21">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -264,7 +216,7 @@ const Pricing = (props) => {
                       {props.plan2Feature11}
                     </span>
                   </div>
-                  <div className="pricing-list-item26">
+                  <div className="pricing-list-item22">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -272,7 +224,7 @@ const Pricing = (props) => {
                       {props.plan2Feature21}
                     </span>
                   </div>
-                  <div className="pricing-list-item27">
+                  <div className="pricing-list-item23">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -280,7 +232,7 @@ const Pricing = (props) => {
                       {props.plan2Feature31}
                     </span>
                   </div>
-                  <div className="pricing-list-item28">
+                  <div className="pricing-list-item24">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -290,23 +242,23 @@ const Pricing = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="pricing-button18 thq-button-animated thq-button-filled">
+              <button className="pricing-button8 thq-button-animated thq-button-filled">
                 <span className="thq-body-small">{props.plan2Action1}</span>
               </button>
             </div>
-            <div className="pricing-column6 thq-card">
-              <div className="pricing-price20">
-                <div className="pricing-price21">
-                  <span className="pricing-text56 thq-body-large">
+            <div className="pricing-column5 thq-card">
+              <div className="pricing-price18">
+                <div className="pricing-price19">
+                  <span className="pricing-text48 thq-body-large">
                     {props.plan31}
                   </span>
-                  <h3 className="pricing-text57 thq-heading-3">
+                  <h3 className="pricing-text49 thq-heading-3">
                     {props.plan3Price1}
                   </h3>
                   <span className="thq-body-large">{props.plan3Yearly1}</span>
                 </div>
-                <div className="pricing-list6">
-                  <div className="pricing-list-item29">
+                <div className="pricing-list5">
+                  <div className="pricing-list-item25">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -314,7 +266,7 @@ const Pricing = (props) => {
                       {props.plan3Feature11}
                     </span>
                   </div>
-                  <div className="pricing-list-item30">
+                  <div className="pricing-list-item26">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -322,7 +274,7 @@ const Pricing = (props) => {
                       {props.plan3Feature21}
                     </span>
                   </div>
-                  <div className="pricing-list-item31">
+                  <div className="pricing-list-item27">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -330,7 +282,7 @@ const Pricing = (props) => {
                       {props.plan3Feature31}
                     </span>
                   </div>
-                  <div className="pricing-list-item32">
+                  <div className="pricing-list-item28">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -338,7 +290,7 @@ const Pricing = (props) => {
                       {props.plan3Feature41}
                     </span>
                   </div>
-                  <div className="pricing-list-item33">
+                  <div className="pricing-list-item29">
                     <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
@@ -348,7 +300,7 @@ const Pricing = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="pricing-button19 thq-button-animated thq-button-filled">
+              <button className="pricing-button9 thq-button-animated thq-button-filled">
                 <span className="thq-body-small">{props.plan3Action1}</span>
               </button>
             </div>
@@ -360,111 +312,95 @@ const Pricing = (props) => {
 }
 
 Pricing.defaultProps = {
-  plan3Price: '$29.99/month',
-  plan3Action: 'Upgrade to Plan 3',
-  plan11: 'Basic plan',
-  plan1Action: 'Upgrade to Plan 1',
-  plan31: 'Enterprise plan',
-  plan3Feature41: 'Feature text goes here',
+  plan1Yearly1: 'or $20 monthly',
   plan1Feature2: 'Schedule calls with experts',
-  plan2Feature11: 'Feature text goes here',
-  plan3Feature51: 'Feature text goes here',
-  plan2Feature41: 'Feature text goes here',
-  plan2Feature2: 'Take skill-specific quizzes',
-  plan3Feature21: 'Feature text goes here',
-  plan2Feature4: 'View professional recommendations',
-  plan2Yearly: '$199.99/year',
-  plan1Action1: 'Get started',
-  plan2Action: 'Upgrade to Plan 2',
-  plan3Feature1: 'All features from Plan 2',
-  plan2Feature3: 'Earn expert badges for skills',
-  plan1Price1: '$200/yr',
-  plan2: 'Business plan',
-  plan2Feature21: 'Feature text goes here',
+  plan3Price: '$29.99/month',
+  plan3Feature5: 'Access to admin dashboard for insights',
+  plan31: 'Enterprise plan',
   plan2Action1: 'Get started',
-  plan3Feature2: 'Set availability for sharing expertise',
-  content1: 'Choose the perfect plan for you',
-  plan2Feature1: 'All features from Plan 1',
-  heading1: 'Pricing plan',
-  plan3Feature31: 'Feature text goes here',
+  plan3Feature1: 'All features from Plan 2',
+  plan3Feature4: 'Receive notifications for scheduled calls',
+  plan2Feature41: 'Feature text goes here',
+  plan3Feature51: 'Feature text goes here',
+  plan1Price: '$9.99/month',
+  content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
   plan1: 'Basic plan',
+  plan1Feature31: 'Feature text goes here',
+  plan1Action: 'Upgrade to Plan 1',
+  plan1Yearly: '$99.99/year',
+  plan2Feature11: 'Feature text goes here',
+  plan2Feature31: 'Feature text goes here',
+  plan2Feature21: 'Feature text goes here',
+  plan3Feature3: 'Schedule calls with skill seekers',
+  plan3Action: 'Upgrade to Plan 3',
   plan21: 'Business plan',
+  plan1Action1: 'Get started',
+  heading1: 'Pricing plan',
+  plan1Price1: '$200/yr',
+  plan3Yearly: '$299.99/year',
+  plan3Feature41: 'Feature text goes here',
+  plan3Feature11: 'Feature text goes here',
+  plan3Feature31: 'Feature text goes here',
+  plan2Price1: '$299/yr',
+  plan1Feature1: 'Access to expert profiles',
+  plan11: 'Basic plan',
+  plan3Feature21: 'Feature text goes here',
+  plan3Action1: 'Get started',
+  plan3Price1: '$499/yr',
+  plan1Feature3: 'Connect with professionals for collaboration',
+  plan3: 'Enterprise plan',
   plan1Feature11: 'Feature text goes here',
   plan1Feature21: 'Feature text goes here',
-  plan3Feature5: 'Access to admin dashboard for insights',
+  content1: 'Choose the perfect plan for you',
   plan2Yearly1: 'or $29 monthly',
-  plan2Price: '$19.99/month',
+  plan3Feature2: 'Set availability for sharing expertise',
   plan3Yearly1: 'or $49 monthly',
-  plan2Feature31: 'Feature text goes here',
-  plan3Feature11: 'Feature text goes here',
-  plan1Yearly1: 'or $20 monthly',
-  plan2Price1: '$299/yr',
-  plan3Yearly: '$299.99/year',
-  plan3Feature4: 'Receive notifications for scheduled calls',
-  plan3Price1: '$499/yr',
-  plan1Feature31: 'Feature text goes here',
-  plan1Feature3: 'Connect with professionals for collaboration',
-  plan1Yearly: '$99.99/year',
-  plan1Feature1: 'Access to expert profiles',
-  plan3Feature3: 'Schedule calls with skill seekers',
-  content2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-  plan3Action1: 'Get started',
-  plan1Price: '$9.99/month',
-  plan3: 'Enterprise plan',
 }
 
 Pricing.propTypes = {
-  plan3Price: PropTypes.string,
-  plan3Action: PropTypes.string,
-  plan11: PropTypes.string,
-  plan1Action: PropTypes.string,
-  plan31: PropTypes.string,
-  plan3Feature41: PropTypes.string,
+  plan1Yearly1: PropTypes.string,
   plan1Feature2: PropTypes.string,
-  plan2Feature11: PropTypes.string,
-  plan3Feature51: PropTypes.string,
-  plan2Feature41: PropTypes.string,
-  plan2Feature2: PropTypes.string,
-  plan3Feature21: PropTypes.string,
-  plan2Feature4: PropTypes.string,
-  plan2Yearly: PropTypes.string,
-  plan1Action1: PropTypes.string,
-  plan2Action: PropTypes.string,
-  plan3Feature1: PropTypes.string,
-  plan2Feature3: PropTypes.string,
-  plan1Price1: PropTypes.string,
-  plan2: PropTypes.string,
-  plan2Feature21: PropTypes.string,
+  plan3Price: PropTypes.string,
+  plan3Feature5: PropTypes.string,
+  plan31: PropTypes.string,
   plan2Action1: PropTypes.string,
-  plan3Feature2: PropTypes.string,
-  content1: PropTypes.string,
-  plan2Feature1: PropTypes.string,
-  heading1: PropTypes.string,
-  plan3Feature31: PropTypes.string,
+  plan3Feature1: PropTypes.string,
+  plan3Feature4: PropTypes.string,
+  plan2Feature41: PropTypes.string,
+  plan3Feature51: PropTypes.string,
+  plan1Price: PropTypes.string,
+  content2: PropTypes.string,
   plan1: PropTypes.string,
+  plan1Feature31: PropTypes.string,
+  plan1Action: PropTypes.string,
+  plan1Yearly: PropTypes.string,
+  plan2Feature11: PropTypes.string,
+  plan2Feature31: PropTypes.string,
+  plan2Feature21: PropTypes.string,
+  plan3Feature3: PropTypes.string,
+  plan3Action: PropTypes.string,
   plan21: PropTypes.string,
+  plan1Action1: PropTypes.string,
+  heading1: PropTypes.string,
+  plan1Price1: PropTypes.string,
+  plan3Yearly: PropTypes.string,
+  plan3Feature41: PropTypes.string,
+  plan3Feature11: PropTypes.string,
+  plan3Feature31: PropTypes.string,
+  plan2Price1: PropTypes.string,
+  plan1Feature1: PropTypes.string,
+  plan11: PropTypes.string,
+  plan3Feature21: PropTypes.string,
+  plan3Action1: PropTypes.string,
+  plan3Price1: PropTypes.string,
+  plan1Feature3: PropTypes.string,
+  plan3: PropTypes.string,
   plan1Feature11: PropTypes.string,
   plan1Feature21: PropTypes.string,
-  plan3Feature5: PropTypes.string,
+  content1: PropTypes.string,
   plan2Yearly1: PropTypes.string,
-  plan2Price: PropTypes.string,
+  plan3Feature2: PropTypes.string,
   plan3Yearly1: PropTypes.string,
-  plan2Feature31: PropTypes.string,
-  plan3Feature11: PropTypes.string,
-  plan1Yearly1: PropTypes.string,
-  plan2Price1: PropTypes.string,
-  plan3Yearly: PropTypes.string,
-  plan3Feature4: PropTypes.string,
-  plan3Price1: PropTypes.string,
-  plan1Feature31: PropTypes.string,
-  plan1Feature3: PropTypes.string,
-  plan1Yearly: PropTypes.string,
-  plan1Feature1: PropTypes.string,
-  plan3Feature3: PropTypes.string,
-  content2: PropTypes.string,
-  plan3Action1: PropTypes.string,
-  plan1Price: PropTypes.string,
-  plan3: PropTypes.string,
 }
 
 export default Pricing

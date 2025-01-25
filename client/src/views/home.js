@@ -1,7 +1,5 @@
 import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
 import Features1 from '../components/features1'
@@ -17,9 +15,11 @@ import './home.css'
 const Home = (props) => {
   return (
     <div className="home-container">
-      <Helmet>
-        <title>Spotless Hungry Crocodile</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Spotless Hungry Crocodile</title>
+        </Helmet>
+      </HelmetProvider>
       <Navbar></Navbar>
       <Hero></Hero>
       <Features1></Features1>

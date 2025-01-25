@@ -1,15 +1,17 @@
 import React from 'react'
 
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 import './not-found.css'
 
 const NotFound = (props) => {
   return (
     <div className="not-found1-container1">
-      <Helmet>
+      <HelmetProvider>
+        <Helmet>
         <title>Spotless Hungry Crocodile</title>
-      </Helmet>
+        </Helmet>
+      </HelmetProvider>
       <h3>OOPS! PAGE NOT FOUND</h3>
       <div className="not-found1-container2">
         <h1 className="not-found1-text2">404</h1>

@@ -29,16 +29,16 @@ const CTA = (props) => {
 }
 
 CTA.defaultProps = {
-  heading1: 'Ready to Find Your Team Members?',
   content1:
     'Join our platform today to connect with skilled experts and collaborate on exciting projects!',
   action1: 'Get Started',
+  heading1: 'Ready to Find Your Team Members?',
 }
 
 CTA.propTypes = {
-  heading1: PropTypes.string,
   content1: PropTypes.string,
   action1: PropTypes.string,
+  heading1: PropTypes.string,
 }
 
 export default CTA

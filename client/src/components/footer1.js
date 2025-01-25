@@ -1,55 +1,77 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 
-import './footer.css'
+import './footer1.css'
 
-const Footer = (props) => {
+const Footer1 = (props) => {
   return (
-    <footer className="footer-footer1 thq-section-padding">
-      <div className="footer-max-width thq-section-max-width">
-        <div className="footer-content">
-          <div className="footer-newsletter">
+    <footer className="footer1-footer1 thq-section-padding">
+      <div className="footer1-max-width thq-section-max-width">
+        <div className="footer1-content">
+          <div className="footer1-newsletter">
             <img
               alt={props.logoAlt}
               src={props.logoSrc}
-              className="footer-image1"
+              className="footer1-image1"
             />
             <span className="thq-body-small">
               Subscribe to our newsletter for the latest updates on new features
               and product releases.
             </span>
-            <div className="footer-actions">
-              <div className="footer-form">
-                <div className="footer-container">
+            <div className="footer1-actions">
+              <div className="footer1-form">
+                <div className="footer1-container">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="footer-text-input thq-input"
+                    className="footer1-text-input thq-input"
                   />
                 </div>
-                <button className="thq-button-outline footer-button">
-                  <span className="thq-body-small">{props.action1}</span>
+                <button className="thq-button-outline footer1-button">
+                  <span className="thq-body-small">
+                    {props.action1 ?? (
+                      <Fragment>
+                        <span className="footer1-text17">
+                          Subscribe to Newsletter
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
                 </button>
               </div>
-              <span className="footer-content2 thq-body-small">
-                {props.content2}
+              <span className="footer1-content2 thq-body-small">
+                {props.content2 ?? (
+                  <Fragment>
+                    <span className="footer1-text19">
+                      Connect with us on social media for updates and more.
+                    </span>
+                  </Fragment>
+                )}
               </span>
             </div>
           </div>
-          <div className="footer-links">
-            <div className="footer-column1">
-              <strong className="thq-body-large footer-column1-title">
-                {props.column1Title}
+          <div className="footer1-links">
+            <div className="footer1-column1">
+              <strong className="thq-body-large footer1-column1-title">
+                {props.column1Title ?? (
+                  <Fragment>
+                    <span className="footer1-text27">Company</span>
+                  </Fragment>
+                )}
               </strong>
-              <div className="footer-footer-links1">
+              <div className="footer1-footer-links1">
                 <a
                   href="https://example.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link1}
+                  {props.link1 ?? (
+                    <Fragment>
+                      <span className="footer1-text24">About Us</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -57,7 +79,11 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link2}
+                  {props.link2 ?? (
+                    <Fragment>
+                      <span className="footer1-text14">Contact Us</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -65,7 +91,11 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link3}
+                  {props.link3 ?? (
+                    <Fragment>
+                      <span className="footer1-text21">FAQs</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -73,7 +103,11 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link4}
+                  {props.link4 ?? (
+                    <Fragment>
+                      <span className="footer1-text28">Blog</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -81,22 +115,34 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link5}
+                  {props.link5 ?? (
+                    <Fragment>
+                      <span className="footer1-text22">Terms of Service</span>
+                    </Fragment>
+                  )}
                 </a>
               </div>
             </div>
-            <div className="footer-column2">
-              <strong className="thq-body-large footer-column2-title">
-                {props.column2Title}
+            <div className="footer1-column2">
+              <strong className="thq-body-large footer1-column2-title">
+                {props.column2Title ?? (
+                  <Fragment>
+                    <span className="footer1-text18">Resources</span>
+                  </Fragment>
+                )}
               </strong>
-              <div className="footer-footer-links2">
+              <div className="footer1-footer-links2">
                 <a
                   href="https://example.com"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link6}
+                  {props.link6 ?? (
+                    <Fragment>
+                      <span className="footer1-text13">Privacy Policy</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -104,7 +150,11 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link7}
+                  {props.link7 ?? (
+                    <Fragment>
+                      <span className="footer1-text10">Cookies Policy</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -112,7 +162,11 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link8}
+                  {props.link8 ?? (
+                    <Fragment>
+                      <span className="footer1-text25">Expert Guidelines</span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -120,7 +174,13 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link9}
+                  {props.link9 ?? (
+                    <Fragment>
+                      <span className="footer1-text11">
+                        Skill Improvement Options
+                      </span>
+                    </Fragment>
+                  )}
                 </a>
                 <a
                   href="https://example.com"
@@ -128,16 +188,26 @@ const Footer = (props) => {
                   rel="noreferrer noopener"
                   className="thq-body-small"
                 >
-                  {props.link10}
+                  {props.link10 ?? (
+                    <Fragment>
+                      <span className="footer1-text20">
+                        Expert Availability
+                      </span>
+                    </Fragment>
+                  )}
                 </a>
               </div>
             </div>
-            <div className="footer-column3">
-              <strong className="thq-body-large footer-social-link1-title">
-                {props.socialLinkTitleCategory}
+            <div className="footer1-column3">
+              <strong className="thq-body-large footer1-social-link1-title">
+                {props.socialLinkTitleCategory ?? (
+                  <Fragment>
+                    <span className="footer1-text12">Follow Us</span>
+                  </Fragment>
+                )}
               </strong>
-              <div className="footer-social-links">
-                <div className="footer-link14">
+              <div className="footer1-social-links">
+                <div className="footer1-link14">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="thq-icon-small"
@@ -146,7 +216,7 @@ const Footer = (props) => {
                   </svg>
                   <span className="thq-body-small">Facebook</span>
                 </div>
-                <div className="footer-link15">
+                <div className="footer1-link15">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="thq-icon-small"
@@ -155,7 +225,7 @@ const Footer = (props) => {
                   </svg>
                   <span className="thq-body-small">Instagram</span>
                 </div>
-                <div className="footer-link16">
+                <div className="footer1-link16">
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
                     className="thq-icon-small"
@@ -164,7 +234,7 @@ const Footer = (props) => {
                   </svg>
                   <span className="thq-body-small">X</span>
                 </div>
-                <div className="footer-link17">
+                <div className="footer1-link17">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="thq-icon-small"
@@ -173,7 +243,7 @@ const Footer = (props) => {
                   </svg>
                   <span className="thq-body-small">LinkedIn</span>
                 </div>
-                <div className="footer-link18">
+                <div className="footer1-link18">
                   <svg viewBox="0 0 1024 1024" className="thq-icon-small">
                     <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
                   </svg>
@@ -183,14 +253,40 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="footer-credits">
+        <div className="footer1-credits">
           <div className="thq-divider-horizontal"></div>
-          <div className="footer-row">
-            <span className="thq-body-small">{props.content3}</span>
-            <div className="footer-footer-links3">
-              <span className="thq-body-small">{props.privacyLink}</span>
-              <span className="thq-body-small">{props.termsLink}</span>
-              <span className="thq-body-small">{props.cookiesLink}</span>
+          <div className="footer1-row">
+            <span className="thq-body-small">
+              {props.content3 ?? (
+                <Fragment>
+                  <span className="footer1-text26">
+                    &amp;copy; 2022 Hackathon Connect. All rights reserved.
+                  </span>
+                </Fragment>
+              )}
+            </span>
+            <div className="footer1-footer-links3">
+              <span className="thq-body-small">
+                {props.privacyLink ?? (
+                  <Fragment>
+                    <span className="footer1-text16">/privacy-policy</span>
+                  </Fragment>
+                )}
+              </span>
+              <span className="thq-body-small">
+                {props.termsLink ?? (
+                  <Fragment>
+                    <span className="footer1-text15">/terms-of-service</span>
+                  </Fragment>
+                )}
+              </span>
+              <span className="thq-body-small">
+                {props.cookiesLink ?? (
+                  <Fragment>
+                    <span className="footer1-text23">/cookies-policy</span>
+                  </Fragment>
+                )}
+              </span>
             </div>
           </div>
         </div>
@@ -199,52 +295,52 @@ const Footer = (props) => {
   )
 }
 
-Footer.defaultProps = {
-  link2: 'Contact Us',
-  content2: 'Connect with us on social media for updates and more.',
-  cookiesLink: '/cookies-policy',
-  logoAlt: 'TeamFinder Logo',
-  link4: 'Blog',
-  link1: 'About Us',
-  link8: 'Register',
-  column2Title: 'Quick Links',
-  content3: '© 2023 TeamFinder. All rights reserved.',
-  action1: 'Subscribe to Newsletter',
-  link5: 'Terms of Use',
-  termsLink: '/terms-of-use',
-  socialLinkTitleCategory: 'Follow Us',
-  column1Title: 'Company',
-  link7: 'Cookies Policy',
-  privacyLink: '/privacy-policy',
+Footer1.defaultProps = {
+  link7: undefined,
+  link9: undefined,
+  socialLinkTitleCategory: undefined,
   logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
-  link6: 'Privacy Policy',
-  link3: 'FAQs',
-  link9: 'Login',
-  link10: 'Dashboard',
+  link6: undefined,
+  link2: undefined,
+  termsLink: undefined,
+  privacyLink: undefined,
+  action1: undefined,
+  column2Title: undefined,
+  content2: undefined,
+  link10: undefined,
+  link3: undefined,
+  link5: undefined,
+  cookiesLink: undefined,
+  link1: undefined,
+  link8: undefined,
+  logoAlt: 'Hackathon Connect Logo',
+  content3: undefined,
+  column1Title: undefined,
+  link4: undefined,
 }
 
-Footer.propTypes = {
-  link2: PropTypes.string,
-  content2: PropTypes.string,
-  cookiesLink: PropTypes.string,
-  logoAlt: PropTypes.string,
-  link4: PropTypes.string,
-  link1: PropTypes.string,
-  link8: PropTypes.string,
-  column2Title: PropTypes.string,
-  content3: PropTypes.string,
-  action1: PropTypes.string,
-  link5: PropTypes.string,
-  termsLink: PropTypes.string,
-  socialLinkTitleCategory: PropTypes.string,
-  column1Title: PropTypes.string,
-  link7: PropTypes.string,
-  privacyLink: PropTypes.string,
+Footer1.propTypes = {
+  link7: PropTypes.element,
+  link9: PropTypes.element,
+  socialLinkTitleCategory: PropTypes.element,
   logoSrc: PropTypes.string,
-  link6: PropTypes.string,
-  link3: PropTypes.string,
-  link9: PropTypes.string,
-  link10: PropTypes.string,
+  link6: PropTypes.element,
+  link2: PropTypes.element,
+  termsLink: PropTypes.element,
+  privacyLink: PropTypes.element,
+  action1: PropTypes.element,
+  column2Title: PropTypes.element,
+  content2: PropTypes.element,
+  link10: PropTypes.element,
+  link3: PropTypes.element,
+  link5: PropTypes.element,
+  cookiesLink: PropTypes.element,
+  link1: PropTypes.element,
+  link8: PropTypes.element,
+  logoAlt: PropTypes.string,
+  content3: PropTypes.element,
+  column1Title: PropTypes.element,
+  link4: PropTypes.element,
 }
 
-export default Footer
+export default Footer1

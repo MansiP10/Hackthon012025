@@ -65,30 +65,30 @@ const Contact = (props) => {
 }
 
 Contact.defaultProps = {
-  content2: 'Our team is here to help you with any questions you may have.',
   email1: 'contact@example.com',
   address1: '123 Main Street, City, Country',
-  content3:
-    'For partnership opportunities or collaborations, please contact us.',
-  content1: 'Feel free to reach out to us for any inquiries or assistance.',
-  content4:
-    'We value your feedback and suggestions. Let us know how we can improve.',
-  heading1: 'Contact Us',
   content5:
     'Stay connected with us on social media for updates and announcements.',
   phone1: '+123-456-7890',
+  content2: 'Our team is here to help you with any questions you may have.',
+  content1: 'Feel free to reach out to us for any inquiries or assistance.',
+  content4:
+    'We value your feedback and suggestions. Let us know how we can improve.',
+  content3:
+    'For partnership opportunities or collaborations, please contact us.',
+  heading1: 'Contact Us',
 }
 
 Contact.propTypes = {
-  content2: PropTypes.string,
   email1: PropTypes.string,
   address1: PropTypes.string,
-  content3: PropTypes.string,
-  content1: PropTypes.string,
-  content4: PropTypes.string,
-  heading1: PropTypes.string,
   content5: PropTypes.string,
   phone1: PropTypes.string,
+  content2: PropTypes.string,
+  content1: PropTypes.string,
+  content4: PropTypes.string,
+  content3: PropTypes.string,
+  heading1: PropTypes.string,
 }
 
 export default Contact

@@ -1,0 +1,28 @@
+.component-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.component-text1 {
+  display: inline-block;
+}
+ 
+.component-text2 {
+  display: inline-block;
+}
+ 
+.component-text3 {
+  display: inline-block;
+}
+ 
+.component-text4 {
+  display: inline-block;
+}
+ 
+.component-text5 {
+  display: inline-block;
+}

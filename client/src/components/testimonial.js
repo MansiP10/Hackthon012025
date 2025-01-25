@@ -118,62 +118,62 @@ const Testimonial = (props) => {
 }
 
 Testimonial.defaultProps = {
-  author2Position: 'Data Scientist',
-  author1Position: 'Software Developer',
-  author3Alt: 'Alex Johnson - UI/UX Designer',
-  author1Name: 'John Doe',
-  author1Src:
-    'https://images.unsplash.com/photo-1527082395-e939b847da0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OHw&ixlib=rb-4.0.3&q=80&w=1080',
-  author3Name: 'Alex Johnson',
-  review2:
-    'Great platform for networking and finding team members. The quiz feature was fun and engaging.',
+  author3Position: 'UI/UX Designer',
   author2Name: 'Jane Smith',
-  author4Position: 'Project Manager',
-  author4Name: 'Emily Brown',
+  author1Name: 'John Doe',
   author4Src:
     'https://images.unsplash.com/photo-1542206395-9feb3edaa68d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OHw&ixlib=rb-4.0.3&q=80&w=1080',
-  author1Alt: 'John Doe - Software Developer',
-  author2Src:
-    'https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OHw&ixlib=rb-4.0.3&q=80&w=1080',
+  author1Src:
+    'https://images.unsplash.com/photo-1527082395-e939b847da0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OHw&ixlib=rb-4.0.3&q=80&w=1080',
+  heading1: 'Testimonials',
+  author3Name: 'Alex Johnson',
   author3Src:
     'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OXw&ixlib=rb-4.0.3&q=80&w=1080',
-  author2Alt: 'Jane Smith - Data Scientist',
-  author4Alt: 'Emily Brown - Project Manager',
+  review2:
+    'Great platform for networking and finding team members. The quiz feature was fun and engaging.',
   content1:
     'Read what our users have to say about their experience with our platform.',
-  author3Position: 'UI/UX Designer',
+  author3Alt: 'Alex Johnson - UI/UX Designer',
   review1:
     'I found the perfect team for my project through this platform. The expert badges helped me connect with skilled professionals easily.',
-  heading1: 'Testimonials',
-  review3:
-    'I love how easy it is to schedule calls with experts. The notifications are very helpful in reminding me of upcoming meetings.',
   review4:
     "This platform has been a game-changer for me. I've connected with top professionals in my field and learned so much from them.",
+  author2Alt: 'Jane Smith - Data Scientist',
+  author4Alt: 'Emily Brown - Project Manager',
+  author2Src:
+    'https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczNzc5MTE2OHw&ixlib=rb-4.0.3&q=80&w=1080',
+  author1Position: 'Software Developer',
+  author1Alt: 'John Doe - Software Developer',
+  author4Name: 'Emily Brown',
+  author2Position: 'Data Scientist',
+  author4Position: 'Project Manager',
+  review3:
+    'I love how easy it is to schedule calls with experts. The notifications are very helpful in reminding me of upcoming meetings.',
 }
 
 Testimonial.propTypes = {
-  author2Position: PropTypes.string,
-  author1Position: PropTypes.string,
-  author3Alt: PropTypes.string,
-  author1Name: PropTypes.string,
-  author1Src: PropTypes.string,
-  author3Name: PropTypes.string,
-  review2: PropTypes.string,
+  author3Position: PropTypes.string,
   author2Name: PropTypes.string,
-  author4Position: PropTypes.string,
-  author4Name: PropTypes.string,
+  author1Name: PropTypes.string,
   author4Src: PropTypes.string,
-  author1Alt: PropTypes.string,
-  author2Src: PropTypes.string,
+  author1Src: PropTypes.string,
+  heading1: PropTypes.string,
+  author3Name: PropTypes.string,
   author3Src: PropTypes.string,
+  review2: PropTypes.string,
+  content1: PropTypes.string,
+  author3Alt: PropTypes.string,
+  review1: PropTypes.string,
+  review4: PropTypes.string,
   author2Alt: PropTypes.string,
   author4Alt: PropTypes.string,
-  content1: PropTypes.string,
-  author3Position: PropTypes.string,
-  review1: PropTypes.string,
-  heading1: PropTypes.string,
+  author2Src: PropTypes.string,
+  author1Position: PropTypes.string,
+  author1Alt: PropTypes.string,
+  author4Name: PropTypes.string,
+  author2Position: PropTypes.string,
+  author4Position: PropTypes.string,
   review3: PropTypes.string,
-  review4: PropTypes.string,
 }
 
 export default Testimonial

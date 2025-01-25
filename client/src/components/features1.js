@@ -82,34 +82,34 @@ const Features1 = (props) => {
 }
 
 Features1.defaultProps = {
-  feature1ImgAlt: 'Team Collaboration Image',
-  feature3Description: 'Extracted Skills Quiz and Expert Badge Workflow',
-  feature3Title: 'Skill Badge Workflow',
-  feature3ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
   feature1ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  feature3Title: 'Skill Badge Workflow',
   feature2Description: 'Skill Expert Availability and Scheduling',
   feature1Title: 'Dynamic Image Slider for Team Collaboration',
+  feature2ImgAlt: 'Availability and Scheduling Image',
   feature3ImgAlt: 'Quiz and Badge Workflow Image',
   feature1Description:
     'Dynamic image slider showcasing team collaboration and screenshots of developed features',
-  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
-  feature2ImgAlt: 'Availability and Scheduling Image',
   feature2Title: 'Expert Availability and Scheduling',
+  feature3Description: 'Extracted Skills Quiz and Expert Badge Workflow',
+  feature1ImgAlt: 'Team Collaboration Image',
+  feature3ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
 }
 
 Features1.propTypes = {
-  feature1ImgAlt: PropTypes.string,
-  feature3Description: PropTypes.string,
-  feature3Title: PropTypes.string,
-  feature3ImgSrc: PropTypes.string,
   feature1ImgSrc: PropTypes.string,
+  feature2ImgSrc: PropTypes.string,
+  feature3Title: PropTypes.string,
   feature2Description: PropTypes.string,
   feature1Title: PropTypes.string,
+  feature2ImgAlt: PropTypes.string,
   feature3ImgAlt: PropTypes.string,
   feature1Description: PropTypes.string,
-  feature2ImgSrc: PropTypes.string,
-  feature2ImgAlt: PropTypes.string,
   feature2Title: PropTypes.string,
+  feature3Description: PropTypes.string,
+  feature1ImgAlt: PropTypes.string,
+  feature3ImgSrc: PropTypes.string,
 }
 
 export default Features1

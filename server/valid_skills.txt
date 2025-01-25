@@ -1,0 +1,21 @@
+JavaScript
+Python
+React
+Node.js
+HTML
+CSS
+Java
+Angular
+Django
+SQL
+Machine Learning
+AI
+Docker
+Kubernetes
+AWS
+WordPress
+Drupal
+Joomla
+Shopify
+Contentful
+Prismic

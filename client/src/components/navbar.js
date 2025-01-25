@@ -25,7 +25,7 @@ const Navbar = (props) => {
             <button className="navbar-action11 thq-button-animated thq-button-filled">
               <span className="thq-body-small">Action 1</span>
             </button>
-            <button className="navbar-action21 thq-button-outline thq-button-animated">
+            <button className="navbar-action21 thq-button-animated thq-button-outline">
               <span className="thq-body-small">Action 2</span>
             </button>
           </div>
@@ -68,27 +68,27 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
-  link1: 'Home',
-  link5: 'Link5',
+  action2: '/about',
+  action1: '/home',
   link2: 'About',
   logoSrc:
     'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&force_format=original',
-  action2: '/about',
-  logoAlt: 'Platform Logo',
+  link1: 'Home',
+  link5: 'Link5',
   link3: 'Features',
-  action1: '/home',
+  logoAlt: 'Platform Logo',
   link4: 'Contact',
 }
 
 Navbar.propTypes = {
-  link1: PropTypes.string,
-  link5: PropTypes.string,
+  action2: PropTypes.string,
+  action1: PropTypes.string,
   link2: PropTypes.string,
   logoSrc: PropTypes.string,
-  action2: PropTypes.string,
-  logoAlt: PropTypes.string,
+  link1: PropTypes.string,
+  link5: PropTypes.string,
   link3: PropTypes.string,
-  action1: PropTypes.string,
+  logoAlt: PropTypes.string,
   link4: PropTypes.string,
 }
 
