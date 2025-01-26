@@ -1,4 +1,4 @@
-## **Hackathon Team Builder Platform**
+### **Platform for Building Teams to Solve Hackathons, Group Projects, and Challenges**
 
 The platform simplifies collaboration by connecting skill seekers and experts for hackathons, challenges, and group projects. It offers a seamless experience for users to showcase their expertise, gain badges, and find the right teammates.
 
